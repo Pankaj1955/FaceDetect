@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKJ-8u-vo4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Capture Controller-->
+        <scene sceneID="XI3-xD-BM2">
+            <objects>
+                <viewController id="FKJ-8u-vo4" customClass="VideoCaptureController" customModule="FDLiveDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tIE-xm-Huc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ye6-4E-UL9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1lf-lQ-urJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-TQ-hBN">
+                                <rect key="frame" x="190" y="816" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="touchDownWithSender:" destination="FKJ-8u-vo4" eventType="touchUpInside" id="HKL-xJ-TB0"/>
+                                    <action selector="touchUpWithSender:" destination="FKJ-8u-vo4" eventType="touchUpInside" id="R8Z-rX-vIg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kZl-TQ-hBN" firstAttribute="centerX" secondItem="1lf-lQ-urJ" secondAttribute="centerX" id="OSi-bM-bUT"/>
+                            <constraint firstAttribute="bottom" secondItem="kZl-TQ-hBN" secondAttribute="bottom" constant="50" id="TAR-Wi-mDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dR9-XD-Y2s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c17-uJ-2Lm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="402"/>
+        </scene>
+    </scenes>
+</document>
